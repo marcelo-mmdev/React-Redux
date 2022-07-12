@@ -9,8 +9,8 @@ export default function SideBar(props) {
     return (
         <>
             <h2>{ props.titulo1 }</h2>
-            <h2>{ valor }</h2>
-            <h2>{ status }</h2>
+            <p>{ valor }</p>
+            <p>{ status }</p>
         </>
     )
 };
