@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import './App.css';
 
+import Membro from './components/membro/index';
 import Family from './components/family/index';
 import Card from './components/layout/index';
 import SideBar from './components/sideBar/SideBar';
@@ -26,7 +27,11 @@ export default function App(props){
                     />
                 </Card>
                 <Card title='Children'>
-                    <Family sobreNome='Rodrigues' />
+                    <Family sobreNome='Rodrigues' idade='35' >
+                        <Membro nome='Marcelo' />
+                        <Membro nome='Marconi' />
+                        <Membro nome='Maciel' />
+                    </Family>
                 </Card>
             </div>
         </div>
