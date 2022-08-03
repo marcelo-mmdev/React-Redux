@@ -1,3 +1,5 @@
+import { ChakraProvider } from '@chakra-ui/react'
+
 // Components
 import FirstComponent from './components/firstComponent/index.jsx'
 import Home from './components/home/index.jsx';
@@ -10,14 +12,16 @@ import ListRender from './components/listRender/index.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Curso de React com Hooks da Udemy</h1>
-      <FirstComponent />
-      <Home />
-      <Butao />
-      <ManageDate />
-      <ListRender />
-    </div>
+    <ChakraProvider>
+      <div className="App">
+        <h1>Curso de React com Hooks da Udemy</h1>
+        <FirstComponent />
+        <Home />
+        <Butao />
+        <ManageDate />
+        <ListRender />
+      </div>
+    </ChakraProvider>
   );
 }
 
