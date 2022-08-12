@@ -22,6 +22,8 @@ const ListRender = () => {
             {list.map((item, i) => (
                 <li key={i}>{item}</li>
             ))}
+            {/* codigo dinamico de imprimir JS no JSX
+                OBS: o map e com () e não {} nesse caso*/}
         </ul>
         <ul>
             {users.map((user) => (
